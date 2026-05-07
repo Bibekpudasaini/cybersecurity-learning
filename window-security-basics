@@ -1,0 +1,146 @@
+## Introduction
+
+While learning Windows security basics, I understood how Windows protects users and systems from unauthorized access and malware. Since Windows is one of the most commonly used operating systems, learning its security features is important in cybersecurity.
+
+Some topics were easy to understand, while others like permissions and system protection needed more practice.
+
+---
+
+# User Accounts
+
+Windows mainly uses two types of user accounts:
+
+## Administrator
+Has full control over the system.
+
+Can:
+- Install software
+- Change settings
+- Manage users
+
+---
+
+## Standard User
+Has limited permissions.
+
+This type of account is safer for daily use because it reduces the risk of accidental system changes.
+
+I learned that using an administrator account all the time may increase security risks.
+
+---
+
+# Windows Defender
+
+Windows Defender is the built-in antivirus in Windows.
+
+Features:
+- Real-time protection
+- Virus scanning
+- Threat detection
+
+I noticed that modern Windows systems already include decent built-in protection.
+
+---
+
+# Windows Firewall
+
+Windows Firewall helps block unauthorized network access.
+
+Purpose:
+- Monitors incoming and outgoing traffic
+- Protects the system from suspicious connections
+
+At first I thought firewall only blocks internet access, but later I understood it filters network traffic based on rules.
+
+---
+
+# User Account Control (UAC)
+
+UAC asks for permission before important system changes are made.
+
+Example:
+When installing software, Windows may ask:
+"Do you want to allow this app to make changes to your device?"
+
+This helps prevent unauthorized administrative actions.
+
+---
+
+# Windows Updates
+
+Windows regularly releases updates to fix bugs and security vulnerabilities.
+
+I learned that outdated systems can become vulnerable to attacks.
+
+Best practice:
+Keep the system updated regularly.
+
+---
+
+# Password Security
+
+Strong passwords are important for system security.
+
+A good password usually contains:
+- Uppercase letters
+- Lowercase letters
+- Numbers
+- Symbols
+
+Weak passwords can easily be guessed or brute-forced.
+
+---
+
+# Common Threats in Windows
+
+Some common security threats include:
+- Malware
+- Ransomware
+- Trojans
+- Phishing attacks
+- Keyloggers
+
+I understood that users themselves can sometimes become the biggest security weakness if they are not careful.
+
+---
+
+# Task Manager
+
+Task Manager is used to monitor:
+- Running applications
+- Background processes
+- CPU and memory usage
+
+Security relevance:
+Suspicious processes can sometimes be identified using Task Manager.
+
+---
+
+# Event Viewer
+
+Event Viewer stores system and security logs.
+
+It can be useful for:
+- Troubleshooting
+- Monitoring events
+- Checking security-related activities
+
+---
+
+# What I Learned
+
+- Windows includes several built-in security features.
+- Regular updates are important for protection.
+- Firewalls and antivirus help reduce risks.
+- User behavior also plays a big role in security.
+
+---
+
+# Cybersecurity Relevance
+
+Understanding Windows security basics helps in:
+- System hardening
+- Defensive security
+- Malware analysis
+- Monitoring suspicious activities
+- Incident response
