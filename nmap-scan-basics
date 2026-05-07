@@ -1,0 +1,193 @@
+# Nmap Basics (Complete Human Notes)
+
+## Introduction
+
+Nmap is one of the first and most important tools I learned in cybersecurity. It is mainly used for scanning networks to find open ports, running services, and sometimes system information like operating system details.
+
+At the beginning, I just saw it as a scanning tool, but later I understood that it is mainly used in the **reconnaissance phase** of ethical hacking, where we try to understand the target before any further testing.
+
+---
+
+## Basic Idea
+
+In Nmap, we usually scan a target machine using its IP address.
+
+Example IP (lab use):
+
+192.168.1.10
+
+
+or in practice labs:
+
+10.10.10.5
+
+
+This IP represents the system we are trying to analyze.
+
+---
+
+## Basic Scan (First Command)
+
+
+nmap 192.168.1.10
+
+
+This is the simplest scan. It checks common ports on the target machine.
+
+Example output:
+
+22/tcp open ssh
+80/tcp open http
+
+
+My understanding:
+This means the system is running SSH (remote login) and a web server.
+
+---
+
+## Service Version Detection
+
+
+nmap -sV 192.168.1.10
+
+
+This shows what software is running on open ports.
+
+Example output:
+
+22/tcp open ssh OpenSSH 8.2
+80/tcp open http Apache 2.4.41
+
+
+My understanding:
+Now I can see not just services, but also their versions, which helps in vulnerability analysis.
+
+---
+
+## Operating System Detection
+
+
+nmap -O 192.168.1.10
+
+
+This tries to detect the operating system of the target.
+
+Example output:
+
+OS details: Linux 4.x or 5.x kernel
+
+
+My understanding:
+It is not always 100% accurate, but it gives a good idea of the system.
+
+---
+
+## Aggressive Scan
+
+
+nmap -A 192.168.1.10
+
+
+This is a full scan that includes:
+- OS detection
+- Version detection
+- Script scanning
+- Traceroute
+
+My understanding:
+This gives a complete view of the target but takes more time.
+
+---
+
+## Scan Specific Ports
+
+
+nmap -p 22,80,443 192.168.1.10
+
+
+This scans only selected ports.
+
+My understanding:
+Useful when I already know which services I want to check.
+
+---
+
+## Scan All Ports
+
+
+nmap -p- 192.168.1.10
+
+
+This scans all 65535 ports.
+
+My understanding:
+It takes time but helps find hidden services running on uncommon ports.
+
+---
+
+## SYN Scan (Stealth Scan)
+
+
+nmap -sS 192.168.1.10
+
+
+This sends SYN packets without completing full connection.
+
+My understanding:
+It is faster and less detectable, commonly used in penetration testing.
+
+---
+
+## UDP Scan
+
+
+nmap -sU 192.168.1.10
+
+
+This scans UDP services like DNS and DHCP.
+
+My understanding:
+It is slower than TCP scans but important because many services use UDP.
+
+---
+
+## Real Example Scenario
+
+If I scan:
+
+
+nmap -sV 10.10.10.5
+
+
+And get result:
+
+22/tcp open ssh OpenSSH 7.6
+80/tcp open http Apache 2.4.29
+
+
+My understanding:
+- SSH is open → possible remote login access
+- HTTP is open → web server is running
+
+So this system has potential attack surfaces in SSH and web services.
+
+---
+
+## What I Learned
+
+- Nmap is used for network reconnaissance
+- IP address represents the target system
+- Open ports show running services
+- Service versions help identify vulnerabilities
+- Scanning is the first step in ethical hacking
+
+---
+
+## Cybersecurity Importance
+
+Nmap is widely used in:
+- Reconnaissance
+- Enumeration
+- Vulnerability assessment
+- Penetration testing
+- Network security analysis
