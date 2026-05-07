@@ -1,0 +1,147 @@
+# Networking Fundamentals Notes
+
+## Introduction
+
+While learning networking fundamentals, I understood how devices communicate with each other over a network. At first some topics like protocols and ports were confusing, but after practicing and reading examples they became easier to understand.
+
+Networking knowledge is important in cybersecurity because most attacks and communications happen through networks.
+
+---
+
+# IP Address
+
+An IP address is used to identify devices on a network.
+
+Example:
+192.168.1.1
+
+I learned that every device connected to a network needs an IP address to communicate with other devices.
+
+There are mainly two types:
+- Public IP
+- Private IP
+
+---
+
+# TCP and UDP
+
+## TCP
+TCP is a reliable communication protocol.
+
+Features:
+- Connection-oriented
+- Reliable data transfer
+- Error checking
+
+Examples:
+- HTTP
+- HTTPS
+- SSH
+
+I understood TCP as a slower but more reliable protocol.
+
+---
+
+## UDP
+UDP is faster but less reliable.
+
+Features:
+- No connection setup
+- Faster communication
+- No guaranteed delivery
+
+Examples:
+- DNS
+- Online games
+- Streaming
+
+At first I found it difficult to compare TCP and UDP, but later I understood:
+- TCP focuses on reliability
+- UDP focuses on speed
+
+---
+
+# DNS
+
+DNS stands for Domain Name System.
+
+It converts domain names into IP addresses.
+
+Example:
+google.com → IP address
+
+Without DNS, users would need to remember IP addresses instead of domain names.
+
+---
+
+# Common Ports
+
+Ports help identify services running on a system.
+
+| Port | Service |
+|---|---|
+| 21 | FTP |
+| 22 | SSH |
+| 53 | DNS |
+| 80 | HTTP |
+| 443 | HTTPS |
+| 445 | SMB |
+| 3389 | RDP |
+
+I learned that attackers often scan ports to discover running services.
+
+---
+
+# Port Scanning
+
+Port scanning is used to identify open ports and services.
+
+Common tool:
+Nmap
+
+Example:
+nmap target_ip
+
+This was one of the interesting topics because it showed how systems can be enumerated.
+
+---
+
+# Ping Command
+
+The ping command is used to test connectivity between systems.
+
+Example:
+ping google.com
+
+I used this command several times to check whether the network connection was working properly.
+
+---
+
+# MAC Address
+
+A MAC address is the physical hardware address of a device.
+
+Example:
+00:1A:2B:3C:4D:5E
+
+Unlike IP addresses, MAC addresses are tied to hardware.
+
+---
+
+# What I Learned
+
+- Networking is one of the core parts of cybersecurity.
+- Ports and protocols help devices communicate.
+- TCP and UDP have different purposes.
+- Port scanning is commonly used during enumeration.
+
+---
+
+# Cybersecurity Relevance
+
+Understanding networking helps in:
+- Enumeration
+- Traffic analysis
+- Port scanning
+- Identifying services
+- Understanding network attacks
